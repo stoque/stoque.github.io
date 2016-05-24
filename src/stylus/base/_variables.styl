@@ -1,0 +1,69 @@
+//
+// Variables
+//
+// 1. Colors
+// 2. Spaces
+// 3. Media Queries
+// 4. Typography
+//
+// ==================================================
+
+//
+// 1. Colors
+// --------------------------------------------------
+
+$primary-color  	 = #c0392b
+
+// Grays
+$gray-darker  		= lighten(#000, 10%)
+$gray-dark        = lighten(#000, 30%)
+$gray				 			= lighten(#000, 50%)
+$gray-light       = lighten(#000, 85%)
+$gray-lighter 		= lighten(#000, 98%)
+
+// Elements
+$text-color				 = $gray-dark
+
+
+//
+// 2. Spaces
+// --------------------------------------------------
+
+$space     = rem(20px)           	// Regular space margin
+$space-xs  = ($space / 4)         // Extra small space margin
+$space-sm  = ($space / 2)         // Small space margin
+$space-md  = ($space + $space-sm) // Medium space margin
+$space-lg  = ($space * 2)         // Large space margin
+$space-xlg = ($space * 4)         // Extra Large space margin
+
+
+//
+// 3. Media Queries
+// --------------------------------------------------
+
+$smartphone   			= 520px  // Extra small screen / phone
+$tablet   					= 768px  // Small screen / tablet
+$desktop  					= 992px  // Medium screen / desktop
+$wide-desktop 		  = 1200px // Large screen / wide desktop
+$wide-desktop-lg  	= 1600px // Extra Large screen / wide desktop
+$widte-desktop-xlg 	= 1900px // Extra Large screen / wide desktop
+
+
+// Rupture Settings
+rupture.mobile-cutoff  = $tablet
+rupture.tablet-cutoff  = $desktop
+rupture.desktop-cutoff = $wide-desktop
+rupture.hd-cutoff      = $wide-desktop-lg
+
+rupture.scale        = 0 $smartphone $tablet $desktop $wide-desktop $wide-desktop-lg $widte-desktop-xlg
+rupture.scale-names  = '0' 'xs' 'sm' 'md' 'lg' 'xlg' 'hd'
+rupture.anti-overlap = -1px
+
+
+//
+// 4. Typography
+// --------------------------------------------------
+
+$rem-base          		= 16px
+$font-size-default 		= rem(16px)
+$font-family					= 'Fira Sans', sans-serif
