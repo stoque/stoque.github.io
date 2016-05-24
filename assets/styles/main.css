@@ -291,7 +291,7 @@ a {
   margin: 0 auto;
   width: 100px;
   height: 100px;
-  border-radius: 35%;
+  border-radius: 40%;
 }
 
 .author-info > .link > .title {
@@ -371,9 +371,17 @@ a {
 }
 
 .nav-bar > .item {
-  padding: 0.625rem 1.25rem;
+  margin-bottom: 5px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
 .nav-bar > .item:first-child {
   margin-top: 50px;
+}
+
+.nav-bar > .item > .link {
+  display: inline-block;
+  padding: 0.625rem 1.25rem;
+  width: 100%;
+  font-weight: bold;
 }
