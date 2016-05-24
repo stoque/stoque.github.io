@@ -19,24 +19,43 @@
 <body>
 	<header class="main-header">
 
-		<nav class="social-nav">
-			<ul class="list">
-				<li class="item">
-					<a href="http://twitter.com/ostoque" class="link">
-						<svg class="icon">
-							<use xlink:href="/assets/images/icons.svg#icon-twitter"></use>
-						</svg>
-					</a>
-				</li>
-				<li class="item">
-					<a href="http://github.com/stoque" class="link">
-						<svg class="icon">
-							<use xlink:href="/assets/images/icons.svg#icon-github"></use>
-						</svg>
-					</a>
-				</li>				
+		<nav class="main-nav">
+			<a class="toggle" href="#">
+				<svg class="icon -white">
+					<use xlink:href="/assets/images/icons.svg#icon-menu"></use>
+				</svg>
+			</a>
+
+			<ul class="nav-bar">
+				<a class="close">
+					<svg class="icon -white">
+						<use xlink:href="/assets/images/icons.svg#icon-close"></use>
+					</svg>
+				</a>
+				<li class="item"><a href="" class="link">About</a></li>
+				<li class="item"><a href="" class="link">Blog</a></li>
+				<li class="item"><a href="" class="link">Github</a></li>
+				<li class="item"><a href="" class="link">Twitter</a></li>
+				<li class="item"><a href="" class="link">Feed</a></li>
 			</ul>
-		</nav>
+		</nav>		
+
+		<ul class="social-nav">
+			<li class="item">
+				<a class="link" href="http://twitter.com/ostoque">
+					<svg class="icon">
+						<use xlink:href="/assets/images/icons.svg#icon-twitter"></use>
+					</svg>
+				</a>
+			</li>
+			<li class="item">
+				<a class="link" href="http://github.com/stoque">
+					<svg class="icon">
+						<use xlink:href="/assets/images/icons.svg#icon-github"></use>
+					</svg>
+				</a>
+			</li>				
+		</ul>		
 
 		<div class="author-info">
 			<a class="link" href="../index.html">
@@ -47,5 +66,7 @@
 		</div>
 
 	</header>
+
+<script src="/assets/scripts/main.js"></script>
 </body>
 </html>

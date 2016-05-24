@@ -271,13 +271,13 @@ a {
 }
 
 .main-header {
-  display: block;
+  padding-top: 0.625rem;
   background: #2c3e50;
   height: 110px;
 }
 
 .author-info {
-  float: left;
+  margin-top: 0.625rem;
   width: 100%;
   text-align: center;
 }
@@ -307,27 +307,73 @@ a {
 
 .icon {
   display: inline-block;
-  height: 30px;
-  width: 30px;
+  height: 32px;
+  width: 32px;
   fill: #3498db;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.icon.-white {
+  fill: #fff;
 }
 
 .social-nav {
-  float: left;
-  width: 100%;
-  background: #2c3e50;
-}
-
-.social-nav > .list {
-  list-style: none;
   text-align: center;
 }
 
-.social-nav > .list > .item {
+.social-nav > .item {
   display: inline-block;
 }
 
-.social-nav > .list > .item > .link {
+.social-nav > .item > .link {
   display: inline-block;
-  padding: 0.625rem;
+  padding: 0.3125rem;
+}
+
+.social-nav > .item > .link:hover .icon {
+  fill: #99cbed;
+}
+
+.toggle {
+  position: absolute;
+  right: 14px;
+  top: 15px;
+}
+
+.nav-bar {
+  position: fixed;
+  padding: 1.25rem;
+  right: -100%;
+  top: 0;
+  width: 80%;
+  height: 100%;
+  text-align: center;
+  background: #3498db;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.nav-bar.-visible {
+  right: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=98)";
+  filter: alpha(opacity=98);
+  opacity: 0.98;
+}
+
+.nav-bar > .close {
+  position: absolute;
+  right: 14px;
+  top: 15px;
+}
+
+.nav-bar > .item {
+  padding: 0.625rem 1.25rem;
+}
+
+.nav-bar > .item:first-child {
+  margin-top: 50px;
 }

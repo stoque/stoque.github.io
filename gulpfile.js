@@ -88,6 +88,8 @@ gulp.task('js', function(){
 		.pipe(plumber())
 		.pipe(concat('main.js'))
 		.pipe(uglify())
+		.pipe(gulp.dest('_site/assets/scripts/'))
+		.pipe(browserSync.reload({stream:true}))
 		.pipe(gulp.dest(path.prod + '/scripts'))
 });
 
