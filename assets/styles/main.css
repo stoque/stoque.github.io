@@ -273,11 +273,13 @@ a {
 .main-header {
   padding-top: 0.625rem;
   background: #2c3e50;
-  height: 110px;
+  height: 65px;
 }
 
 .author-info {
   margin-top: 0.625rem;
+  position: fixed;
+  top: 0;
   width: 100%;
   text-align: center;
 }
@@ -295,19 +297,19 @@ a {
 }
 
 .author-info > .link > .title {
-  font-size: 1.25rem;
+  font-size: 1.313rem;
   color: #454545;
 }
 
 .author-info > .link > .subtitle {
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: #3498db;
 }
 
 .icon {
   display: inline-block;
-  height: 32px;
-  width: 32px;
+  height: 30px;
+  width: 30px;
   fill: #3498db;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -318,7 +320,8 @@ a {
 }
 
 .social-nav {
-  text-align: center;
+  text-align: left;
+  margin-left: 14px;
 }
 
 .social-nav > .item {
@@ -371,7 +374,7 @@ a {
 
 .nav-bar > .item {
   margin-bottom: 5px;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid rgba(255,255,255,0.15);
 }
 
 .nav-bar > .item:first-child {
@@ -382,5 +385,4 @@ a {
   display: inline-block;
   padding: 0.625rem 1.25rem;
   width: 100%;
-  font-weight: bold;
 }
