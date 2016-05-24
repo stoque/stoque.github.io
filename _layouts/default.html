@@ -1,20 +1,51 @@
+{% comment %}{% include head.html %}
+<body>
+	{% include header.html %}
+
+	<main class="container">
+		{{ content }}
+	</main>
+</body>
+</html>{% endcomment %}
 <!DOCTYPE html>
 <html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lucas Stoque - Desenvolvedor Front</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/assets/styles/main.min.css">
+</head>
+<body>
+	<header class="main-header">
 
-  {% include head.html %}
+		<nav class="social-nav">
+			<ul class="list">
+				<li class="item">
+					<a href="" class="link">
+						<svg class="icon">
+							<use xlink:href="/assets/images/icons.svg#icon-twitter"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="item">
+					<a href="" class="link">
+						<svg class="icon">
+							<use xlink:href="/assets/images/icons.svg#icon-github"></use>
+						</svg>
+					</a>
+				</li>				
+			</ul>
+		</nav>
 
-  <body>
+		<div class="author-info">
+			<a class="link" href="../index.html">
+				<img class="avatar" src="assets/images/avatar.jpg" alt="Lucas Stoque">
+{% comment %}				<h1 class="title">Lucas Stoque</h1>
+				<span class="subtitle">Front-End Developer</span>{% endcomment %}
+			</a>
+		</div>
 
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
-
-    {% include footer.html %}
-
-  </body>
-
+	</header>
+</body>
 </html>
