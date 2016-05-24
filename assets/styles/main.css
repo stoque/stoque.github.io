@@ -347,15 +347,15 @@ a {
   padding: 1.25rem;
   right: -100%;
   top: 0;
-  width: 80%;
+  width: 100%;
   height: 100%;
   text-align: center;
   background: #3498db;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
   opacity: 0;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 .nav-bar.-visible {
@@ -366,18 +366,14 @@ a {
 }
 
 .nav-bar > .close {
-  position: absolute;
-  right: 14px;
-  top: 15px;
+  display: inline-block;
+  margin-left: 90%;
+  margin-top: -3px;
 }
 
 .nav-bar > .item {
   margin-bottom: 5px;
   border-bottom: 1px solid rgba(255,255,255,0.15);
-}
-
-.nav-bar > .item:first-child {
-  margin-top: 50px;
 }
 
 .nav-bar > .item > .link {
