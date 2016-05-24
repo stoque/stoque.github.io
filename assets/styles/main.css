@@ -283,8 +283,8 @@ a {
 }
 
 .author-info > .link {
-  color: #4d4d4d;
   display: inline-block;
+  text-transform: lowercase;
 }
 
 .author-info > .link > .avatar {
@@ -296,13 +296,12 @@ a {
 
 .author-info > .link > .title {
   font-size: 1.25rem;
-  color: #2c3e50;
-  line-height: 24px;
+  color: #454545;
 }
 
 .author-info > .link > .subtitle {
-  font-size: 1rem;
-  text-transform: lowercase;
+  font-size: 0.875rem;
+  color: #3498db;
 }
 
 .icon {

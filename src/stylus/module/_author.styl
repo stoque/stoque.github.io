@@ -4,8 +4,8 @@
 	text-align center
 
 	> .link
-		color $text-color
 		display inline-block
+		text-transform lowercase
 		
 		> .avatar
 			margin 0 auto
@@ -15,10 +15,9 @@
 		
 		> .title
 			font-size rem(20px)
-			color $primary-color
-			line-height 24px
+			color darken($gray-dark,10%)
+			
 
 		> .subtitle
-			font-size rem(16px)
-			text-transform lowercase	
-	
+			font-size rem(14px)
+			color $second-color
