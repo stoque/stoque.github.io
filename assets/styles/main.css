@@ -257,7 +257,7 @@ a:hover {
 }
 
 main {
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 .container {
@@ -285,7 +285,7 @@ main {
   margin-left: auto;
   margin-right: auto;
   border-left: 1px solid #e1e1e1;
-  padding: 0.3125rem 1.25rem;
+  padding: 0.3125rem 15px;
   -webkit-transition: 0.6s;
   transition: 0.6s;
 }
@@ -313,7 +313,7 @@ main {
 }
 
 .article-content > .text {
-  font-size: 0.813rem;
+  font-size: 0.875rem;
 }
 
 .author-info {
@@ -365,31 +365,35 @@ main {
   fill: #fff;
 }
 
-.experience-list > .item {
-  margin-bottom: 20px;
+.article-list > .item {
+  margin-bottom: 1.25rem;
 }
 
-.experience-list > .item:before {
-  content: "• ";
+.article-list > .item.-small {
+  margin-bottom: 0.3125rem;
+}
+
+.article-list > .item:before {
+  content: "♢ ";
   color: #3498db;
 }
 
-.experience-list > .item > .name {
+.article-list > .item > .name {
   font-size: 0.875rem;
 }
 
-.experience-list > .item > .name strong {
+.article-list > .item > .name strong {
   color: #3498db;
 }
 
-.experience-list > .item > .function {
+.article-list > .item > .function {
   display: block;
   margin-top: 5px;
   font-size: 0.813rem;
   color: #3498db;
 }
 
-.experience-list > .item > .description {
+.article-list > .item > .description {
   margin-top: 5px;
   font-size: 0.813rem;
 }

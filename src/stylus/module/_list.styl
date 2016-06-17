@@ -1,10 +1,13 @@
-.experience-list
+.article-list
 	
 	> .item
-		margin-bottom 20px
+		margin-bottom $space
+		
+		&.-small
+			margin-bottom $space-xs
 
 		&:before
-			content "• "
+			content "♢ "
 			color $primary-color
 
 		> .name
