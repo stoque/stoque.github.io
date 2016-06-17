@@ -13,33 +13,23 @@
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Lucas Stoque - Desenvolvedor Front</title>
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/assets/styles/main.min.css">
 </head>
 <body>
 	<header class="main-header">
 
-		<nav class="main-nav">
-			<a class="toggle" href="#">
-				<svg class="icon">
-					<use xlink:href="/assets/images/icons.svg#icon-menu"></use>
-				</svg>
-			</a>
-
-			<ul class="nav-bar">
-				<a class="close">
-					<svg class="icon -white">
-						<use xlink:href="/assets/images/icons.svg#icon-close"></use>
-					</svg>
-				</a>
-				<li class="item"><a href="" class="link">About</a></li>
-				<li class="item"><a href="" class="link">Blog</a></li>
-				<li class="item"><a href="" class="link">Github</a></li>
-				<li class="item"><a href="" class="link">Twitter</a></li>
-				<li class="item"><a href="" class="link">Feed</a></li>
-			</ul>
-		</nav>		
-
+		<div class="author-info">
+			<img class="avatar" src="assets/images/avatar.jpg" alt="Lucas Stoque">
+			<h1 class="title">Lucas Stoque</h1>
+			<span class="subtitle">Desenvolvedor Front-End</span>
+			<p class="description">
+				Brasileiro, Solteiro, 22 anos <br>
+				Higienópolis – Rio de Janeiro – RJ <br>					
+				(21) 99171-0319  | <a href="#">stoque@live.com</a>
+			</p>
+		</div>
+		
 		<ul class="social-nav">
 			<li class="item">
 				<a class="link" href="http://twitter.com/ostoque">
@@ -54,18 +44,54 @@
 						<use xlink:href="/assets/images/icons.svg#icon-github"></use>
 					</svg>
 				</a>
-			</li>				
-		</ul>		
-
-		<div class="author-info">
-			<a class="link" href="../index.html">
-				<img class="avatar" src="assets/images/avatar.jpg" alt="Lucas Stoque">
-				<h1 class="title">Lucas Stoque</h1>
-				<span class="subtitle">Front-End Developer</span>
-			</a>
-		</div>
+			</li>	
+			<li class="item">
+				<a class="link" href="http://github.com/stoque">
+					<svg class="icon">
+						<use xlink:href="/assets/images/icons.svg#icon-linkedin"></use>
+					</svg>
+				</a>
+			</li>	
+		</ul>
 
 	</header>
+
+	<main>
+		<section>
+			<article class="article-content">
+				<h2 class="subtitle">Objetivo</h2>
+				<p class="text">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id blanditiis in distinctio, laborum minima fugiat, aliquid dignissimos itaque. Porro, in.
+				</p>
+			</article>
+
+			<article class="article-content">
+				<h2 class="subtitle">Experiência Profissional</h2>
+				
+				<ul class="experience-list">
+					<li class="item">
+						<span class="name">OUT/2012 - <strong>LLE FERRAGENS LTDA</strong></span> <br>
+						<span class="function">Técnico de Suporte</span>
+
+						<p class="description">
+							Responsável e suporte de sistema mobile de vendas para usuários externos; Suporte para usuários do sistema interno; Desenvolvimento front-end dos três websites da empresa; Suporte dos websites de venda e manutenção em HTML/CSS dos mesmos;  Criação de relatórios via linguagem SQL em banco de dados Oracle.
+						</p>
+					</li>
+					<li class="item">
+						<span class="name">JAN/2012 - SET/2012 - <strong>CVFI</strong></span> <br>
+						<span class="function">Técnico de Suporte</span>
+
+						<p class="description">
+							Suporte ao usuário de empresas externas, montagem e manuntenção de computadores em campo, instalação e manuntenção de redes.
+						</p>
+					</li>
+				</ul>
+
+
+			</article>
+
+		</section>
+	</main>
 
 <script src="/assets/scripts/main.js"></script>
 </body>

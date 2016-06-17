@@ -6,9 +6,9 @@
 	padding 0
 
 body
-	backgorund $body-color
+	background $body-color
 	color $text-color
-	font-family 'Roboto', sans-serif
+	font-family 'Open Sans', sans-serif
 
 h1
 	padding 0
@@ -19,4 +19,10 @@ li,ul,ol
 	
 a
 	text-decoration none
-	color #fff	
+	color $link-color
+	
+	&:hover
+		text-decoration underline
+	
+main
+	padding 0 20px

@@ -1,23 +1,28 @@
 .author-info
 	margin-top $space-sm
 	width 140px
-	margin -50px auto
+	width 100%
 	text-align center
 
-	> .link
-		display inline-block
-		text-transform lowercase
+	> .avatar
+		margin 0 auto
+		width 130px
+		height 130px
+		border-radius 100%
+		opacity .95
 		
-		> .avatar
-			margin 0 auto
-			width 100px
-			height 100px
-			border-radius 40%
-			
-		> .title
-			font-size rem(21px)
-			color darken($gray-dark,10%)
-			
-		> .subtitle
-			font-size rem(16px)
-			color $second-color
+	> .title
+		margin-top 5px
+		font-size rem(22px)
+		font-weight normal
+		color darken($gray-dark,10%)
+	
+	> .subtitle
+		font-size rem(16px)
+		color darken($gray-dark,10%)
+		
+	> .description
+		margin-top 10px
+		font-size rem(13px)
+		text-align center
+		color $gray-dark
