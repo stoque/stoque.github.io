@@ -11,13 +11,23 @@
 		border-radius 100%
 		opacity .95
 		
+		+desktop()
+			height 140px
+			width 140px
+		
 	> .title
 		margin-top 5px
 		font-size rem(22px)
 		font-weight normal
 		color darken($gray-dark,10%)
+		
+		+desktop()
+			font-size rem(24px)
 
 	> .description
 		font-size rem(13px)
 		text-align center
 		color $gray-dark
+		
+		+desktop()
+			font-size rem(14px)

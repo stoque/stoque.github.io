@@ -368,7 +368,7 @@ main {
 
 .article-list > .item {
   margin-bottom: 1.25rem;
-  font-size: 0.813rem;
+  font-size: 0.875rem;
 }
 
 .article-list > .item.-small {
@@ -463,4 +463,39 @@ main {
   display: inline-block;
   padding: 0.625rem 1.25rem;
   width: 100%;
+}
+
+@media only screen and (min-width: 1200px) {
+  .article-content > .subtitle {
+    font-size: 1.25rem;
+  }
+
+  .article-content .text {
+    font-size: 1rem;
+  }
+
+  .author-info > .avatar {
+    height: 140px;
+    width: 140px;
+  }
+
+  .author-info > .title {
+    font-size: 1.5rem;
+  }
+
+  .author-info > .description {
+    font-size: 0.875rem;
+  }
+
+  .article-list > .item {
+    font-size: 1rem;
+  }
+
+  .article-list > .item > .name {
+    font-size: 1rem;
+  }
+
+  .article-list > .item > .function {
+    font-size: 1rem;
+  }
 }

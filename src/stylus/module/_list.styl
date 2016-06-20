@@ -2,7 +2,10 @@
 	
 	> .item
 		margin-bottom $space
-		font-size rem(13px)
+		font-size rem(14px)
+
+		+desktop()
+			font-size rem(16px)
 		
 		&.-small
 			margin-bottom $space-xs
@@ -15,6 +18,9 @@
 		> .name
 			font-size rem(14px)
 			
+			+desktop()
+				font-size rem(16px)
+			
 			strong
 				color $primary-color
 			
@@ -23,6 +29,9 @@
 			margin 5px 0
 			font-size rem(14px)
 			color $primary-color
+			
+			+desktop()
+				font-size rem(16px)
 			
 		> .description
 			margin-top 5px
