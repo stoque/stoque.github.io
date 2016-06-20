@@ -232,7 +232,7 @@ th {
 
 body {
   background: #fafafa;
-  color: #4d4d4d;
+  color: #666;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -284,7 +284,7 @@ main {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-  border-left: 1px solid #e1e1e1;
+  border-left: 2px solid #e1e1e1;
   padding: 0.3125rem 15px;
   -webkit-transition: 0.6s;
   transition: 0.6s;
@@ -302,18 +302,19 @@ main {
 }
 
 .article-content:hover {
-  border-left: 1px solid #3498db;
+  border-left: 2px solid #3498db;
 }
 
 .article-content > .subtitle {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-size: 1.188rem;
   color: #3498db;
   font-weight: normal;
 }
 
-.article-content > .text {
+.article-content .text {
   font-size: 0.875rem;
+  line-height: 1.5em;
 }
 
 .top-button {
@@ -343,19 +344,13 @@ main {
   margin-top: 5px;
   font-size: 1.375rem;
   font-weight: normal;
-  color: #454545;
-}
-
-.author-info > .subtitle {
-  font-size: 1rem;
-  color: #454545;
+  color: #5c5c5c;
 }
 
 .author-info > .description {
-  margin-top: 10px;
   font-size: 0.813rem;
   text-align: center;
-  color: #4d4d4d;
+  color: #666;
 }
 
 .icon {
@@ -382,6 +377,7 @@ main {
 
 .article-list > .item:before {
   content: "♢ ";
+  font-weight: 700;
   color: #3498db;
 }
 
@@ -395,8 +391,8 @@ main {
 
 .article-list > .item > .function {
   display: block;
-  margin-top: 5px;
-  font-size: 0.813rem;
+  margin: 5px 0;
+  font-size: 0.875rem;
   color: #3498db;
 }
 
