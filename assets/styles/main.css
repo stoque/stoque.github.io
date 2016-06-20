@@ -302,7 +302,7 @@ main {
 }
 
 .article-content:hover {
-  border-left: 2px solid #3498db;
+  border-left: 2px solid #2ecc71;
 }
 
 .article-content > .subtitle {
