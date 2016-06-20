@@ -330,14 +330,11 @@ main {
   text-align: center;
 }
 
-.author-info > .avatar {
+.author-info >.link > .avatar {
   margin: 0 auto;
   width: 130px;
   height: 130px;
-  border-radius: 100%;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
-  filter: alpha(opacity=95);
-  opacity: 0.95;
+  border-radius: 50%;
 }
 
 .author-info > .title {
@@ -474,9 +471,9 @@ main {
     font-size: 1rem;
   }
 
-  .author-info > .avatar {
-    height: 140px;
-    width: 140px;
+  .author-info >.link > .avatar {
+    height: 160px;
+    width: 160px;
   }
 
   .author-info > .title {
