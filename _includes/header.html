@@ -1,24 +1,30 @@
-<header class="main-header">
-  <div class="container">
+	<a name="top"></a>
+	<header class="main-header">
+		<section class="author-info">
+			<img class="avatar" src="assets/images/avatar.jpg" alt="Lucas Stoque">
+			<h1 class="title">Lucas Stoque</h1>
+			<p class="description">
+				Brasileiro, Solteiro, 22 anos <br>
+				Higienópolis – Rio de Janeiro – RJ <br>					
+				(21) 99171-0319  | <a href="#">stoque@live.com</a>
+			</p>
+		</section>
+		
+		<ul class="social-nav">
+			<li class="item">
+				<a class="link" href="http://github.com/stoque">
+					<svg class="icon">
+						<use xlink:href="/assets/images/icons.svg#icon-github"></use>
+					</svg>
+				</a>
+			</li>	
+			<li class="item">
+				<a class="link" href="http://github.com/stoque">
+					<svg class="icon">
+						<use xlink:href="/assets/images/icons.svg#icon-linkedin"></use>
+					</svg>
+				</a>
+			</li>	
+		</ul>
 
-    <div class="author-info">
-    	<a class="link" href="../index.html">
-	      <img class="avatar" src="/assets/images/profile.jpg" alt="{{ site.title }}">
-
-	      <h1 class="title">{{ site.name }}</h1>
-	      <h2 class="subtitle">{{ site.bio }}</h2>
-      </a>
-    </div>
-
-		<nav class="main-nav">
-			<ul class="list">
-				{% for page in site.pages %}
-					{% if page.title %}
-					<li class="item"><a class="link" href="{{ page.url }}">{{ page.title }}</a></li>
-					{% endif %}
-				{% endfor %}
-			</ul>
-		</nav>	
-
-  </div>
-</header>
+	</header>
