@@ -1,0 +1,29 @@
+.main
+	lost-center 900px
+	margin-top 50px
+	padding 0 $space
+
+.post-link
+	padding $space
+	border 2px solid darken(#fff, 8%)
+	margin-bottom 30px
+	transition border 0.6s
+	
+	&:hover
+		border 2px solid $primary-color
+	
+	> .link
+		text-decoration none
+		color lighten(#000, 15%)
+
+		> .title
+			font-size rem(26px)
+			color $primary-color
+			
+		> .description
+			margin $space 0	
+			
+		> .date
+			font-size rem(14px)
+			text-transform uppercase	
+		
