@@ -1,17 +1,33 @@
-	<a name="top"></a>
-	<header class="main-header">
+<header class="main-header">
+
+	<div class="container">
+	<a class="nav-toggle">
+		<svg class="icon">
+			<use xlink:href="/assets/images/icons.svg#icon-menu"></use>
+		</svg>
+	</a>
+	<nav class="main-nav">
+		<a class="nav-close">
+			<svg class="icon">
+				<use xlink:href="/assets/images/icons.svg#icon-close"></use>
+			</svg>
+		</a>
+		<ul class="list">
+			<li class="item"><a href="" class="link">Blog</a></li>
+			<li class="item"><a href="" class="link">Sobre</a></li>
+			<li class="item"><a href="" class="link">Feed</a></li>				
+		</ul>
+	</nav>
+
+
 		<section class="author-info">
-			<a class="link" href="index.html">
-				<img class="avatar" src="assets/images/avatar.jpg" alt="Lucas Stoque">
+			<img src="assets/images/avatar.jpg" alt="Avatar" class="avatar">
+			<a href="/" class="link">
+				<h1 class="title">Lucas Stoque</h1>	
+				<span class="description">Desenvolvedor Front-End</span>
 			</a>
-			<h1 class="title">Lucas Stoque</h1>
-			<p class="description">
-				Brasileiro, Solteiro, 22 anos <br>
-				Higienópolis – Rio de Janeiro – RJ <br>					
-				(21) 99171-0319  | <a href="mailto:stoque@live.com">stoque@live.com</a>
-			</p>
 		</section>
-		
+
 		<ul class="social-nav">
 			<li class="item">
 				<a class="link" href="http://github.com/stoque" title="Meu Github">
@@ -26,7 +42,14 @@
 						<use xlink:href="/assets/images/icons.svg#icon-linkedin"></use>
 					</svg>
 				</a>
-			</li>	
+			</li>
+			<li class="item">
+				<a class="link" href="https://www.linkedin.com/in/lucas-stoque-lima-46bbba108" title="Meu CodePen">
+					<svg class="icon">
+						<use xlink:href="/assets/images/icons.svg#icon-rss"></use>
+					</svg>
+				</a>
+			</li>
 		</ul>
-
-	</header>
+	</div>
+</header>

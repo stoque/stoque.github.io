@@ -1,8 +1,8 @@
 // Elementos auxiliares
-var openMenu	  = document.querySelectorAll('.toggle'),
-    closeMenu		= document.querySelectorAll('.close'),
-		linkMenu		= document.querySelectorAll(".nav-bar > .item > .link"),
-    navBar    	= document.querySelector('.nav-bar');
+var openMenu	  = document.querySelectorAll('.nav-toggle'),
+    closeMenu		= document.querySelectorAll('.nav-close'),
+		linkMenu		= document.querySelectorAll('.main-nav > .list > .item > .link'),
+    navBar    	= document.querySelector('.main-nav');
 
 
 // Evento de click para chamar função menuAction
@@ -14,10 +14,10 @@ for (var i = 0; i < linkMenu.length; i++){
 
 // Função que abre e fecha o menu
 function menuAction() {
-  if(navBar.classList.contains('-visible')){
-  	navBar.classList.remove('-visible');
+  if(navBar.classList.contains('is-active')){
+  	navBar.classList.remove('is-active');
   }
   else {
-  	navBar.classList.add('-visible');
+  	navBar.classList.add('is-active');
   }
 };

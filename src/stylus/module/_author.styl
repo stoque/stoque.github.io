@@ -1,32 +1,35 @@
 .author-info
-	margin-top $space-sm
-	width 140px
-	width 100%
-	text-align center
-
-	>.link > .avatar
-		margin 0 auto
-		width 130px
-		height 130px
-		border-radius 50%
-
-		+desktop()
-			height 160px
-			width 160px
+	float left
 		
-	> .title
-		margin-top 5px
-		font-size rem(22px)
-		font-weight normal
-		color darken($gray-dark,10%)
-		
-		+desktop()
-			font-size rem(24px)
-
-	> .description
-		font-size rem(13px)
+	+below($desktop)
+		width 100%
 		text-align center
-		color $gray-dark
+		margin-top -20px
+	
+	> .avatar
+		width 120px
+		height 120px
+		display block
+		margin 0 auto
+		border-radius 50%
 		
-		+desktop()
-			font-size rem(14px)
+		+above($desktop)
+			display none
+			
+	> .link
+		text-decoration none		
+		
+	> .link > .title
+		font-size rem(16px)
+		text-transform uppercase
+		color #fff
+		
+		+above($desktop)
+			margin-top 14px
+
+	> .link > .description
+		font-size rem(12px)
+		text-transform uppercase
+		font-weight bold
+		color $primary-color
+		
