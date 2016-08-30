@@ -3,32 +3,33 @@ layout: default
 ---
 {% include minutes-to-read.html %}
 
-<article class="article post">
+<article class="post-content">
 	<header class="header">
-		<div class="post-date">
-			<time class="date">{{ page.date | date_to_string }}</time>
-			<span class="readingtime">- {{ minutesText }}</span>
-		</div>
-		<h1 class="title -post">{{ page.title }}</h1>
+		<time class="date">{{ page.date | date_to_string }}</time>
+		<span class="readingtime">- {{ minutesText }}</span>
+		<h1 class="title">{{ page.title }}</h1>
 	</header>
 
-	<div class="post-content">
+	<div class="content">
 	{{ content }}
 	</div>
 
-{% comment %}Disqus{% endcomment %}
-<div id="disqus_thread"></div>
-<script>
-	var disqus_config = function () {
-	this.page.url = '{{ site.url }} {{ page.url }}'; // Replace PAGE_URL with your page's canonical URL variable
-	this.page.identifier = '{{ page.url }}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-	};
-	(function() { // DON'T EDIT BELOW THIS LINE
-	var d = document, s = d.createElement('script');
-	s.src = '//lucasstoque.disqus.com/embed.js';
-	s.setAttribute('data-timestamp', +new Date());
-	(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-</article>
+<div class="disqus-coments">
+	<h3 class="title">Comentários</h3>
+	<div id="disqus_thread">
+	<script>
+		var disqus_config = function () {
+		this.page.url = '{{ site.url }} {{ page.url }}'; // Replace PAGE_URL with your page's canonical URL variable
+		this.page.identifier = '{{ page.url }}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+		};
+		(function() { // DON'T EDIT BELOW THIS LINE
+		var d = document, s = d.createElement('script');
+		s.src = '//lucasstoque.disqus.com/embed.js';
+		s.setAttribute('data-timestamp', +new Date());
+		(d.head || d.body).appendChild(s);
+	})();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+	</article>
+	</div>
+</div>

@@ -1,17 +1,14 @@
 .main
 	background $body-color
+	padding-top 50px
 
 	+below($desktop)
-		padding 0 $space
-		position relative
-		top 280px
-		padding-top 50px
-
+		padding 50px $space
+		
 	+above($desktop)
 		lost-center 900px
 
 .post-link
-	position relative
 	padding $space
 	border 2px solid darken(#fff, 8%)
 	margin-bottom 30px
@@ -35,7 +32,38 @@
 		> .date
 			font-size rem(12px)
 			color lighten(#000, 40%)
-			position absolute
-			right 10px
-			bottom 10px
+			float right
+			margin-top 14px
+
+		
+
+.post-content
+	
+	> .header
+		margin-bottom $space
+		text-align center
+		
+	> .header > .date
+		font-size rem(14px)
+		text-transform uppercase
+		
+	> .header > .readingtime
+		font-size rem(14px)
+		
+	> .header > .title
+		color $primary-color
+		font-size rem(40px)
+		
+
+	.content
+
+		p
+			font-size 16px
+			line-height 2
+			
+		a
+			color $primary-color
+			text-decoration none
+			border-bottom 1px dashed $primary-color	
+			
 		
