@@ -1,29 +1,41 @@
 .main
-	lost-center 900px
-	margin-top 50px
-	padding 0 $space
+	background $body-color
+
+	+below($desktop)
+		padding 0 $space
+		position relative
+		top 280px
+		padding-top 50px
+
+	+above($desktop)
+		lost-center 900px
 
 .post-link
+	position relative
 	padding $space
 	border 2px solid darken(#fff, 8%)
 	margin-bottom 30px
 	transition border 0.6s
-	
+
 	&:hover
 		border 2px solid $primary-color
 	
 	> .link
 		text-decoration none
-		color lighten(#000, 15%)
+		color lighten(#000, 20%)
 
 		> .title
 			font-size rem(26px)
 			color $primary-color
 			
 		> .description
-			margin $space 0	
+			margin $space-sm 0	
+			font-size rem(14px)
 			
 		> .date
-			font-size rem(14px)
-			text-transform uppercase	
+			font-size rem(12px)
+			color lighten(#000, 40%)
+			position absolute
+			right 10px
+			bottom 10px
 		

@@ -2,5 +2,11 @@
 	background lighten(#000, 8%)
 	height 280px
 
+	+below($desktop)
+		background-size cover
+		width 100%
+		position fixed
+		top 0
+
 	+above($desktop)
 		height rem(70px)
