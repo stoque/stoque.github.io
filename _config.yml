@@ -14,13 +14,20 @@ title: Lucas Stoque - Desenvolvedor Front End
 email: stoque@live.com
 description: "Um blog de um desenvolvedor frontend que ama novas técnologias"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://stoque.github.io/" # the base hostname & protocol for your site
+url: "https://stoque.github.io" # the base hostname & protocol for your site
 twitter_username: ostoque
 github_username:  stoque
 
 # Build settings
 markdown: kramdown
 permalink: /:title/
+
+# Links
+links:
+  - title: Blog
+    url: /
+  - title: Sobre
+    url: /about
 
 # Exclude node and source
 exclude: ['package.json', 'gulpfile.js', 'README.md', 'src', 'node_modules']

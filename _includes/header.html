@@ -14,8 +14,9 @@
 				</svg>
 			</a>
 			<ul class="list">
-				<li class="item"><a href="" class="link">Blog</a></li>
-				<li class="item"><a href="" class="link">Sobre</a></li>
+				{% for link in site.links %}
+					<li class="item"><a href="{{ link.url }}" class="link">{{link.title}}</a></li>
+				{% endfor %}
 				<li class="item"><a href="" class="link">Resume</a></li>				
 			</ul>
 		</nav>

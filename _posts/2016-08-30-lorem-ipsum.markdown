@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Lorem Ipsum"
-introduction: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, asperiores?"
+introduction: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, asperiores? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, amet!"
 date:   2016-08-30 14:35:00 -0300
 categories: jekyll update
 tags:
