@@ -231,7 +231,7 @@ th {
 }
 
 body {
-  background: #fafafa;
+  background: #fff;
   color: #666;
   font-family: 'Open Sans', sans-serif;
 }
@@ -274,12 +274,12 @@ figure {
 
 .main-header {
   background: #141414;
-  height: 280px;
+  height: 270px;
   width: 100%;
 }
 
 .main {
-  background: #fafafa;
+  background: #fff;
   padding-top: 50px;
 }
 
@@ -313,12 +313,9 @@ figure {
 .post-link > .link > .date {
   font-size: 0.75rem;
   color: #666;
-  float: right;
-  margin-top: 14px;
 }
 
 .post-content > .header {
-  margin-bottom: 1.25rem;
   text-align: center;
 }
 
@@ -333,34 +330,74 @@ figure {
 
 .post-content > .header > .title {
   color: #2ecc71;
-  font-size: 2.5rem;
+}
+
+.post-content .content {
+  margin-top: 2.5rem;
 }
 
 .post-content .content p {
-  font-size: 16px;
+  line-height: 1.8;
+  margin: 0 0 1.875rem 0;
+}
+
+.post-content .content h2 {
   line-height: 2;
+  margin: 0 0 1.25rem 0;
+}
+
+.post-content .content h3,
+.post-content .content h4 {
+  line-height: 1.5;
+  margin: 40px 0 1.25rem 0;
+}
+
+.post-content .content h3 {
+  color: #a3a3a3;
+}
+
+.post-content .content h4 {
+  color: #a3a3a3;
+}
+
+.post-content .content img {
+  display: block;
+  max-width: 100%;
+  margin: 2.5rem auto;
 }
 
 .post-content .content a {
   color: #2ecc71;
   text-decoration: none;
-  border-bottom: 1px dashed #2ecc71;
+}
+
+.post-content .content a:hover {
+  border-bottom: 2px dashed #2ecc71;
+}
+
+.post-content .content ul {
+  margin: 0 0 1.875rem 0;
+}
+
+.post-content .content li {
+  padding: 0.3125rem;
+  list-style: inside;
 }
 
 .author-info {
   float: left;
 }
 
-.author-info > .avatar {
+.author-info > .link {
+  text-decoration: none;
+}
+
+.author-info > .link > .avatar {
   width: 120px;
   height: 120px;
   display: block;
   margin: 0 auto;
   border-radius: 50%;
-}
-
-.author-info > .link {
-  text-decoration: none;
 }
 
 .author-info > .link > .title {
@@ -380,10 +417,6 @@ figure {
   margin-top: 5rem;
 }
 
-.disqus-coments .title {
-  font-size: 1.375rem;
-}
-
 #disqus_thread a {
   color: #2ecc71;
 }
@@ -391,7 +424,11 @@ figure {
 .highlight pre {
   padding: 1.25rem;
   width: 100%;
-  margin: 1.25rem 0;
+  margin: 1.875rem 0;
+}
+
+.language-sh {
+  color: #fff;
 }
 
 .highlight pre {
@@ -727,8 +764,8 @@ figure {
   padding: 0.3125rem 0.625rem;
   border-radius: 5px;
   font-size: 0.75rem;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .tag-list .link:hover {
@@ -777,7 +814,27 @@ figure {
     clear: both;
   }
 
-  .author-info > .avatar {
+  .post-content > .header > .title {
+    font-size: 2.875rem;
+  }
+
+  .post-content .content p {
+    font-size: 19px;
+  }
+
+  .post-content .content h2 {
+    font-size: 2.188rem;
+  }
+
+  .post-content .content h3 {
+    font-size: 1.563rem;
+  }
+
+  .post-content .content h4 {
+    font-size: 1.25rem;
+  }
+
+  .author-info > .link > .avatar {
     display: none;
   }
 
@@ -839,7 +896,27 @@ figure {
 
 @media only screen and (max-width: 991px) {
   .main {
-    padding: 50px 1.25rem;
+    padding: 30px 1.25rem;
+  }
+
+  .post-content > .header > .title {
+    font-size: 2rem;
+  }
+
+  .post-content .content p {
+    font-size: 16px;
+  }
+
+  .post-content .content h2 {
+    font-size: 1.75rem;
+  }
+
+  .post-content .content h3 {
+    font-size: 1.375rem;
+  }
+
+  .post-content .content h4 {
+    font-size: 1.125rem;
   }
 
   .author-info {

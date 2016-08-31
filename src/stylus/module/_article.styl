@@ -1,12 +1,3 @@
-.main
-	background $body-color
-	padding-top 50px
-
-	+below($desktop)
-		padding 50px $space
-		
-	+above($desktop)
-		lost-center 900px
 
 .post-link
 	padding $space
@@ -32,15 +23,11 @@
 		> .date
 			font-size rem(12px)
 			color lighten(#000, 40%)
-			float right
-			margin-top 14px
-
 		
 
 .post-content
 	
 	> .header
-		margin-bottom $space
 		text-align center
 		
 	> .header > .date
@@ -52,18 +39,77 @@
 		
 	> .header > .title
 		color $primary-color
-		font-size rem(40px)
 		
+		+below($desktop)
+			font-size rem(32px)
+
+		+above($desktop)
+			font-size rem(46px)
+				
 
 	.content
+		margin-top $space-lg
 
 		p
-			font-size 16px
+			line-height 1.8
+			margin 0 0 $space-md 0
+			
+			+below($desktop)
+				font-size 16px	
+				
+			+above($desktop)
+				font-size 19px	
+				
+		h2
 			line-height 2
+			margin 0 0 $space 0		
+			
+		h3, h4
+			line-height 1.5
+			margin 40px 0 $space 0			
+
+		h2
+			+below($desktop)
+				font-size rem(28px)
+				
+			+above($desktop)
+				font-size rem(35px)
+			
+		h3
+			color lighten($text-color, 40%)	
+			
+			+below($desktop)
+				font-size rem(22px)	
+				
+			+above($desktop)	
+				font-size rem(25px)	
+							
+		h4 
+			color lighten($text-color, 40%)	
+			
+			+below($desktop)
+				font-size rem(18px)		
+				
+			+above($desktop)
+				font-size rem(20px)	
+			
+		img
+			display block
+			max-width 100%
+			margin $space-lg auto
 			
 		a
 			color $primary-color
 			text-decoration none
-			border-bottom 1px dashed $primary-color	
+			
+			&:hover
+				border-bottom 2px dashed $primary-color	
+			
+		ul
+			margin 0 0 $space-md 0
+
+		li
+			padding $space-xs
+			list-style inside
 			
 		
