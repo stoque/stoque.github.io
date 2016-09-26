@@ -1,39 +1,41 @@
 .author-info
 	float left
-		
+	width 200px
+	display block
+
 	+below($desktop)
 		width 100%
 		text-align center
 		margin-top -20px
-			
+
 	> .link
-		text-decoration none		
-		
+		text-decoration none
+
 	> .link > .avatar
 		width 120px
 		height 120px
-		display block
-		margin 0 auto
 		border-radius 50%
-		
+		object-fit cover
+
 		+above($desktop)
-			display none		
-		
+			display none
+
 	> .link > .title
 		font-size rem(16px)
 		text-transform uppercase
+		font-weight 700
 		color #fff
-		
+
 		+above($desktop)
 			margin-top 18px
 
 	> .link > .description
 		font-size rem(12px)
 		text-transform uppercase
-		font-weight bold
 		color $primary-color
+		// display block
+		margin-bottom 5px
 
 		+above($desktop)
 			display block
 			margin-top -2px
-		

@@ -6,16 +6,15 @@ date:   2016-05-24 12:00:46 -0300
 description: "Um pouco sobre mim."
 ---
 
+Me chamo Lucas Stoque Lima, sou carioca, tenho 22 anos e atualmente trabalho como **Desenvolvedor Front-End** na LLE Ferragens.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, aspernatur nulla. Optio eius, obcaecati quaerat a ratione porro maiores natus omnis, repellendus unde praesentium assumenda nisi repellat dicta, quis ab consequatur earum labore! Quos deleniti illum odit tempora est iure, nam, fuga odio dolore, qui omnis! Exercitationem nostrum, illo sed.
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam dicta dolores quibusdam dignissimos recusandae quo voluptatibus incidunt laborum aliquam asperiores dolorum pariatur harum quisquam ipsum, distinctio obcaecati, minus culpa dolorem.
 
 ### Skills
 * HTML
 * CSS 
 * JavaScript
 * Stylus ❤, Less, Sass
+* SMACSS, RSCSS, BEM, OOCSS
 * Web Responsive (Mobile First)
 * Git
 * Gulp
