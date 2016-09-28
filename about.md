@@ -14,7 +14,7 @@ Nessa época eu gostava de criar layouts e tentava codificar, foi quando conheci
 
 Entrei na empresa que estou em 2012 como Suporte, mas sempre estudava sobre desenvolvimento nas horas vagas e fiz alguns freelas por fora, em 2015 tive a oportunidade de desenvolver o front da nova versão do e-commerce deles e hoje sou responsável pela àrea de desenvolvimento front-end da empresa.
 
-Estou sempre estudando e testando novas técnologias e metodologias.
+Sou apaixonado por front-end e estou sempre estudando e testando novas técnologias e metodologias.
 
 ### Skills
 * HTML, CSS, JavaScript
@@ -29,3 +29,5 @@ Estou sempre estudando e testando novas técnologias e metodologias.
 * SQL 
 * PHP, CakePHP (Básico)
 * Dentre outras técnologias web...
+
+Quer trocar uma ideia comigo? Só mandar um e-mail para [stoque@live.com](mailto:stoque@live.com) ;)
