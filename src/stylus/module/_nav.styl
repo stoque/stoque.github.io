@@ -3,59 +3,59 @@
 .nav-toggle
 	float right
 	padding $space-sm
-	
+
 	+above($desktop)
 		display none
-	
+
 	> .icon
 		width 30px
 		height 30px
-		
+
 .main-nav
 	+below($desktop)
 		position fixed
 		right -100%
 		width 80%
 		height 100%
-		background $primary-color		
+		background $primary-color
 		transition all 0.6s ease-out
 		opacity 0
 		z-index 2
-		
+
 		&.is-active
 			right 0
 			transition all 0.6s ease-out
 			opacity 1
-		
+
 	+above($desktop)
 		float right
 		margin-top 15px
 
 	> .nav-close
-		float right	
+		float right
 		padding $space-sm
 		margin-right 6%
-		
+
 		+above($desktop)
 			display none
-		
+
 		> .icon
 			width 30px
-			height 30px	
-		
+			height 30px
+
 	> .list
-			
+
 		+below($desktop)
 			height 100%
 			clear right
-			margin-top 60px	
+			margin-top 60px
 
 	> .list > .item
-		
+
 		+below($desktop)
 			text-align center
 			margin-bottom 5px
-		
+
 		+above($desktop)
 			display inline-block
 			margin-left 20px
@@ -67,15 +67,15 @@
 		font-weight bold
 		text-decoration none
 		color #fff
-		padding $space-sm	
-		
+		padding $space-sm
+
 		+above($desktop)
 			transition color 0.6s
 
 			&:hover
 				color $primary-color
 				border-bottom 2px solid #fff
-			
+
 
 
 // Social nav
@@ -93,21 +93,20 @@
 		margin 0 auto
 		padding 22px
 		text-align center
-	
+
 	> .item
-		display inline-block	
-		margin-left 10px	
-		
+		display inline-block
+		margin-left 10px
+
 	> .item > .link
 		padding $space-xs
-		
+
 		+above($desktop)
 			.icon
 				width 24px
 				height 24px
 				transition 0.6s
-		
+
 		+above($desktop)
 			&:hover .icon
 				fill $primary-color
-		
