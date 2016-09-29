@@ -2,6 +2,7 @@
 layout: post
 title:  "Welcome to Jekyll!"
 introduction: "You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes."
+description: "You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes."
 date:   2016-05-24 12:00:46 -0300
 categories: jekyll update
 tags:
