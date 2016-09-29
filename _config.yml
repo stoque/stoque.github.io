@@ -12,7 +12,7 @@ bio: Front End Developer
 # Site settings
 title: Lucas Stoque - Desenvolvedor Front End
 email: stoque@live.com
-description: "Um blog de um desenvolvedor frontend que ama novas técnologias"
+description: "Um blog de um desenvolvedor frontend que ama estudar e testar novas técnologias e metodologias"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://stoque.github.io" # the base hostname & protocol for your site
 twitter_username: ostoque
@@ -31,4 +31,3 @@ links:
 
 # Exclude node and source
 exclude: ['package.json', 'gulpfile.js', 'README.md', 'src', 'node_modules']
-

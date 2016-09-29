@@ -1,7 +1,28 @@
-.main-header
+.site-header
 	background lighten(#000, 10%)
-	height 270px
+	background #fff
 	width 100%
+	border-bottom 2px solid rgba(0,0,0,.05)
 
 	+above($desktop)
+		display flex
+		align-items center
+		justify-content center
 		height rem(70px)
+		position fixed
+		top 0
+
+.header-inner
+	padding $space-sm
+	display flex
+	align-items center
+	text-align center
+	position relative
+
+	+below($desktop)
+		flex-direction column
+		justify-content space-between
+
+	+above($desktop)
+		width 65%
+		justify-content space-between

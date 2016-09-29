@@ -1,8 +1,9 @@
 // Main nav
 // ----------------------
 .nav-toggle
-	float right
-	padding $space-sm
+	position absolute
+	right $space
+	top $space-sm
 
 	+above($desktop)
 		display none
@@ -10,26 +11,29 @@
 	> .icon
 		width 30px
 		height 30px
+		fill $text-color
 
 .main-nav
 	+below($desktop)
 		position fixed
 		right -100%
-		width 80%
+		top 0
+		width 70%
 		height 100%
-		background $primary-color
-		transition all 0.6s ease-out
-		opacity 0
+		background darken($gray-darker,30%)
+		background #fff
+		transition all 0.4s ease-in
+		opacity 1
 		z-index 2
 
 		&.is-active
 			right 0
-			transition all 0.6s ease-out
+			transition all 0.4s ease-in
 			opacity 1
 
 	+above($desktop)
-		float right
-		margin-top 15px
+		width 250px
+		text-align center
 
 	> .nav-close
 		float right
@@ -40,6 +44,7 @@
 			display none
 
 		> .icon
+			fill $text-color
 			width 30px
 			height 30px
 
@@ -48,7 +53,7 @@
 		+below($desktop)
 			height 100%
 			clear right
-			margin-top 60px
+			z-index 3
 
 	> .list > .item
 
@@ -58,55 +63,43 @@
 
 		+above($desktop)
 			display inline-block
-			margin-left 20px
+			margin-right 20px
+
+			&:last-child
+				margin-right 0
 
 	> .list > .item	 > .link
 		display block
-		text-transform uppercase
-		font-size rem(14px)
-		font-weight bold
+		text-transform lowercase
+		font-weight 400
 		text-decoration none
-		color #fff
 		padding $space-sm
 
+		+below($desktop)
+			font-size rem(20px)
+			color $text-color
+
 		+above($desktop)
+			font-size rem(16px)
+			color $text-color
 			transition color 0.6s
 
 			&:hover
 				color $primary-color
-				border-bottom 2px solid #fff
 
+.nav-overlay
+	position fixed
+	width 100%
+	height 100%
+	background transparent
+	top 0
+	right 0
+	pointer-events none
 
-
-// Social nav
-// -------------------------
-
-.social-nav
-	+below($desktop)
-		float left
-		width 100%
-		margin-top 14px
-		text-align center
+	&.is-active
+		pointer-events auto
+		transition background 0.4s ease-in
+		background rgba(0,0,0,.7)
 
 	+above($desktop)
-		width 200px
-		margin 0 auto
-		padding 22px
-		text-align center
-
-	> .item
-		display inline-block
-		margin-left 10px
-
-	> .item > .link
-		padding $space-xs
-
-		+above($desktop)
-			.icon
-				width 24px
-				height 24px
-				transition 0.6s
-
-		+above($desktop)
-			&:hover .icon
-				fill $primary-color
+		display none

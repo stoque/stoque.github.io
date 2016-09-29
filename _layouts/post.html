@@ -4,6 +4,7 @@ layout: default
 {% include minutes-to-read.html %}
 
 <article class="post-content">
+	<div class="container">
 	<header class="header">
 		<time class="date">{{ page.date | date_to_string }}</time>
 		<span class="readingtime">- {{ minutesText }}</span>
@@ -14,21 +15,23 @@ layout: default
 	{{ content }}
 	</div>
 
-<div class="disqus-coments">
-	<div id="disqus_thread">
-	<script>
-		var disqus_config = function () {
-		this.page.url = '{{ site.url }} {{ page.url }}'; // Replace PAGE_URL with your page's canonical URL variable
-		this.page.identifier = '{{ page.url }}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-		};
-		(function() { // DON'T EDIT BELOW THIS LINE
-		var d = document, s = d.createElement('script');
-		s.src = '//lucasstoque.disqus.com/embed.js';
-		s.setAttribute('data-timestamp', +new Date());
-		(d.head || d.body).appendChild(s);
-	})();
-	</script>
-	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-	</article>
+	<div class="disqus-coments">
+		<div id="disqus_thread">
+		<script>
+			var disqus_config = function () {
+			this.page.url = '{{ site.url }} {{ page.url }}'; // Replace PAGE_URL with your page's canonical URL variable
+			this.page.identifier = '{{ page.url }}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+			};
+			(function() { // DON'T EDIT BELOW THIS LINE
+			var d = document, s = d.createElement('script');
+			s.src = '//lucasstoque.disqus.com/embed.js';
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+		})();
+		</script>
+		<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+		</div>
 	</div>
-</div>
+	</div>
+</article>

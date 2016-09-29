@@ -1,113 +1,117 @@
 
 .post-link
 	padding $space
-	border 2px solid darken(#fff, 8%)
+	background #fff
+	border 1px solid darken(#fff, 8%)
 	margin-bottom 30px
 	width 100%
 	transition border 0.6s
 
 	&:hover
-		border 2px solid $primary-color
-	
+		border 1px solid $primary-color
+
 	> .link
 		text-decoration none
 		color lighten(#000, 20%)
 
 		> .title
-			font-size rem(26px)
+			font-size rem(22px)
 			color $primary-color
-			
+			padding $space-sm 0
+
 		> .description
-			margin $space-sm 0	
 			font-size rem(14px)
-			
+			color $text-color
+
 		> .date
 			font-size rem(12px)
-			color lighten(#000, 40%)
-		
+			color $text-color
+
 
 .post-content
-	
-	> .header
+
+	.header
 		text-align center
-		
-	> .header > .date
+
+	.header > .date
 		font-size rem(14px)
 		text-transform uppercase
-		
-	> .header > .readingtime
+
+	.header > .readingtime
 		font-size rem(14px)
-		
-	> .header > .title
+
+	.header > .title
 		color $primary-color
-		
+
 		+below($desktop)
 			font-size rem(32px)
 
 		+above($desktop)
 			font-size rem(46px)
-				
 
 	.content
-		margin-top $space-lg
+
+		+below($desktop)
+			margin-top $space
+
+		+above($desktop)
+			margin-top $space-lg
 
 		p
 			line-height 1.8
 			margin 0 0 $space-md 0
-			
+
 			+below($desktop)
-				font-size 16px	
-				
+				font-size 16px
+
 			+above($desktop)
-				font-size 19px	
-				
+				font-size 19px
+
 		h2
 			line-height 2
-			margin 0 0 $space 0		
-			
+			margin 0 0 $space 0
+
 		h3, h4
 			line-height 1.5
-			margin 40px 0 $space 0			
+			margin 40px 0 $space 0
 
 		h2
 			+below($desktop)
 				font-size rem(28px)
-				
+
 			+above($desktop)
 				font-size rem(35px)
-			
+
 		h3
-			color lighten($text-color, 40%)	
-			
+			color lighten($text-color, 40%)
+
 			+below($desktop)
-				font-size rem(22px)	
-				
-			+above($desktop)	
-				font-size rem(25px)	
-							
-		h4 
-			color lighten($text-color, 40%)	
-			
-			+below($desktop)
-				font-size rem(18px)		
-				
+				font-size rem(22px)
+
 			+above($desktop)
-				font-size rem(20px)	
-			
+				font-size rem(25px)
+
+		h4
+			color lighten($text-color, 40%)
+
+			+below($desktop)
+				font-size rem(18px)
+
+			+above($desktop)
+				font-size rem(20px)
+
 		img
 			display block
 			max-width 100%
 			margin $space-lg auto
-			
+
 		a
 			&:hover
-				border-bottom 2px dashed $primary-color	
-			
+				border-bottom 2px dashed $primary-color
+
 		ul
 			margin 0 0 $space-md 0
 
 		li
 			padding $space-xs
 			list-style inside
-			
-		

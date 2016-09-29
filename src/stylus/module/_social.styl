@@ -1,0 +1,32 @@
+.social-list
+	+below($desktop)
+		margin $space-sm
+		text-align center
+
+	+above($desktop)
+		width 250px
+		text-align center
+
+	> .item
+		display inline-block
+		margin-left 10px
+
+	> .item > .link
+		padding $space-xs
+
+		.icon
+			fill $gray-darker
+			transition 0.6s
+
+		+below($desktop)
+			width 26px
+			height 26px		
+
+		+above($desktop)
+			width 22px
+			height 22px
+
+
+		+above($desktop)
+			&:hover .icon
+				fill $primary-color

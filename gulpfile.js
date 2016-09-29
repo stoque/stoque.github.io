@@ -20,7 +20,7 @@ var gulp 				= require('gulp'),
 
 var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
-};		
+};
 
 // Directories
 path = {
@@ -37,7 +37,7 @@ path = {
  */
 gulp.task('jekyll-build', function (done) {
     browserSync.notify(messages.jekyllBuild);
-    return cp.spawn('jekyll.bat', ['build'], {stdio: 'inherit'})
+    return cp.spawn('jekyll', ['build'], {stdio: 'inherit'})
         .on('close', done);
 });
 
@@ -65,7 +65,7 @@ gulp.task('stylus', function() {
 		.pipe(plumber())
 		.pipe(stylus({
 			use:[rupture(), koutoSwiss(), poststylus('lost')]
-		})) 
+		}))
 		.pipe(gcmq())
 		.pipe(gulp.dest('_site/assets/styles/'))
 		.pipe(browserSync.reload({stream:true}))
@@ -97,9 +97,9 @@ gulp.task('js', function(){
 gulp.task('imagemin', function() {
 	return gulp.src(path.dev + '/images/**/*')
 		.pipe(plumber())
-		.pipe(imagemin({ 
-			optimizationLevel: 3, 
-			progressive: true, 
+		.pipe(imagemin({
+			optimizationLevel: 3,
+			progressive: true,
 			interlaced: true,
 			use: [pngquant()]
 		}))
