@@ -17,9 +17,9 @@
 			</a>
 			<ul class="list">
 				{% for link in site.links %}
-					<li class="item"><a href="{{ link.url }}" class="link">{{link.title}}</a></li>
+					<li class="item"><a href="{{ link.url }}" class="link" alt="{{link.title}}">{{link.title}}</a></li>
 				{% endfor %}
-				<li class="item"><a href="https://github.com/stoque/resume" class="link">Resume</a></li>
+				<li class="item"><a href="https://github.com/stoque/resume" class="link" alt="Resume">Resume</a></li>
 			</ul>
 		</nav>
 
@@ -48,7 +48,7 @@
 				</a>
 			</li>
 			<li class="item">
-				<a class="link" href="/feed.xml" title="Meu Feed">
+				<a class="link" href="/feed.xml" title="Meu RSS">
 					<svg class="icon">
 						<use xlink:href="/assets/images/icons.svg#icon-rss"></use>
 					</svg>
