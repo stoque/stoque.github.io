@@ -914,7 +914,8 @@ a {
   }
 
   .header-inner {
-    width: 65%;
+    width: 95%;
+    max-width: 1300px;
     -webkit-justify-content: space-between;
     -ms-justify-content: space-between;
     justify-content: space-between;
