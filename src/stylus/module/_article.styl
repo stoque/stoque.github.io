@@ -1,14 +1,15 @@
-
 .post-link
 	padding $space
 	background #fff
 	border 1px solid darken(#fff, 8%)
 	margin-bottom 30px
 	width 100%
-	transition border 0.6s
+	transition 0.3s
 
 	&:hover
-		border 1px solid $primary-color
+		// border 1px solid $primary-color
+		transition 0.3s
+		box-shadow 0 2px 8px rgba(0,0,0,.08)
 
 	> .link
 		text-decoration none
@@ -107,7 +108,7 @@
 
 		a
 			&:hover
-				border-bottom 2px dashed $primary-color
+				border-bottom 4px solid rgba($primary-color, 80%)
 
 		ul
 			margin 0 0 $space-md 0

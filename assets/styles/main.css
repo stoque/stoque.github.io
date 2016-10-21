@@ -301,7 +301,7 @@ a {
   fill: #e74c3c;
   width: 14px;
   height: 14px;
-  margin: 0 5px;
+  margin: 0 2px;
   -webkit-animation: pulse 0.3s infinite alternate;
   animation: pulse 0.3s infinite alternate;
 }
@@ -364,9 +364,7 @@ a {
 
 .site-header {
   background: #1a1a1a;
-  background: #fff;
   width: 100%;
-  border-bottom: 2px solid rgba(0,0,0,0.05);
 }
 
 .header-inner {
@@ -396,12 +394,15 @@ a {
   border: 1px solid #ebebeb;
   margin-bottom: 30px;
   width: 100%;
-  -webkit-transition: border 0.6s;
-  transition: border 0.6s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .post-link:hover {
-  border: 1px solid #2ecc71;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 .post-link > .link {
@@ -473,7 +474,7 @@ a {
 }
 
 .post-content .content a:hover {
-  border-bottom: 2px dashed #2ecc71;
+  border-bottom: 4px solid rgba(46,204,113,0.8);
 }
 
 .post-content .content ul {
@@ -488,22 +489,17 @@ a {
 .brand {
   font-size: 1rem;
   font-weight: 700;
-  color: #666;
+  color: #fff;
   font-size: 1.625rem;
   font-weight: 300;
   letter-spacing: -0.05em;
   text-transform: lowercase;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-  filter: alpha(opacity=80);
-  opacity: 0.8;
 }
 
 .brand:hover {
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  -ms-filter: none;
-  filter: none;
-  opacity: 1;
+  color: #2ecc71;
 }
 
 .disqus-coments {
@@ -815,7 +811,7 @@ a {
 .nav-toggle > .icon {
   width: 30px;
   height: 30px;
-  fill: #666;
+  fill: #fff;
 }
 
 .main-nav > .nav-close {
@@ -865,7 +861,7 @@ a {
 }
 
 .social-list > .item > .link .icon {
-  fill: #595959;
+  fill: #fff;
   -webkit-transition: 0.6s;
   transition: 0.6s;
 }
@@ -915,7 +911,6 @@ a {
 
   .header-inner {
     width: 95%;
-    max-width: 1300px;
     -webkit-justify-content: space-between;
     -ms-justify-content: space-between;
     justify-content: space-between;
@@ -989,6 +984,7 @@ a {
   .main-nav > .list > .item > .link {
     font-size: 1rem;
     color: #666;
+    color: #fff;
     -webkit-transition: color 0.6s;
     transition: color 0.6s;
   }
@@ -1067,7 +1063,6 @@ a {
     top: 0;
     width: 70%;
     height: 100%;
-    background: #3e3e3e;
     background: #fff;
     -webkit-transition: all 0.4s ease-in;
     transition: all 0.4s ease-in;
