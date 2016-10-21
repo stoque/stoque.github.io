@@ -20,7 +20,7 @@ Sou apaixonado por front-end e estou sempre estudando e testando novas técnolog
 * HTML, CSS, JavaScript
 * Stylus ❤, Less, Sass, PostCSS
 * SMACSS, RSCSS, BEM, OOCSS
-* Design Responsivo (Mobile First)
+* Responsive Design (Mobile First)
 * Noções de UI e UX
 * Noções de Motion Design
 * Git
