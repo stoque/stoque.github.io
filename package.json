@@ -1,0 +1,21 @@
+{
+  "scripts": {
+    "clean": "bundle exec jekyll clean",
+    "dev": "gulp dev",
+    "prod": "gulp prod"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-group-css-media-queries": "^1.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-stylus": "^2.6.0",
+    "gulp-uglify": "^3.0.0",
+    "kouto-swiss": "^1.1.0",
+    "poststylus": "^1.0.0",
+    "rupture": "^0.6.2"
+  }
+}
