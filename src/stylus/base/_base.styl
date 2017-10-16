@@ -1,0 +1,39 @@
+*,
+*:after,
+*:before
+  box-sizing border-box
+  margin 0
+  padding 0
+
+::selection
+  background #000
+  color #fff
+
+html,
+body
+  height 100%
+
+body
+  display flex
+  flex-direction column
+  font-family 'Ubuntu', sans-serif
+  position relative
+  border-bottom 4px solid $primary-color
+
+main
+  flex-grow 1
+
+ol,
+ul,
+li
+  list-style none
+
+a
+  color $primary-color
+  font-weight 700
+  text-decoration none
+  transition color 0.4s linear
+
+  &:hover
+    border-bottom 3px solid $primary-color
+    color #000

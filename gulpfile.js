@@ -42,7 +42,7 @@ gulp.task('browser-sync', ['jekyll-build'], () => {
 });
 
 gulp.task('stylus', () => {
-  gulp.src(path.dev + '/stylus/main.styl')
+  gulp.src(path.dev + '/stylus/stoque.styl')
     .pipe(plumber())
     .pipe(stylus({
       use:[rupture(), koutoSwiss()]
@@ -54,7 +54,7 @@ gulp.task('stylus', () => {
 });
 
 gulp.task('css-min', function() {
-	gulp.src( path.prod + '/styles/main.css')
+	gulp.src( path.prod + '/styles/stoque.css')
 		.pipe(cssmin())
 		.pipe(rename({suffix: '.min'}))
 		.pipe(gulp.dest('_site/assets/styles/'))
@@ -77,7 +77,7 @@ gulp.task('watch', ['stylus', 'browser-sync'], () => {
 	gulp.watch(path.dev + '/scripts/**/*.js', ['js']);
 	gulp.watch(path.dev + '/images/**/*.{jpg,png,gif}', ['imagemin']);
 	gulp.watch(['*.{html,md}', '_includes/*', '_layouts/*', '_posts/*'], ['jekyll-rebuild']);
-	gulp.watch(path.prod + '/styles/main.css', ['css-min'])
+	gulp.watch(path.prod + '/styles/stoque.css', ['css-min'])
 });
 
 gulp.task('dev', ['js', 'stylus', 'browser-sync', 'watch']);

@@ -3,24 +3,59 @@ layout: default
 ---
 
 <div class="home">
+  <div class="profile-wrapper">
+    <a class="link" href="/">
+      <img class="avatar" src="https://avatars0.githubusercontent.com/u/12236827?s=460&v=4" alt="My picture">
+      <h1 class="name">Lucas Stoque</h1>
+      <h2 class="profession">Front-end Engineer</h2>
+    </a>
+    <h3 class="info">
+      Currently living in Rio de Janeiro - Brasil <br> and working at <a href="http://wooza.com.br" target="_blank">Wooza</a>
+    </h3>
+  </div>
 
-  <h1 class="page-heading">Posts</h1>
-  
-  {{ content }}
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
+  <ul class="social-list">
+    <li class="item">
+      <a class="link" href="#" alt="My CodePen">
+        <svg class="icon">
+          <use xlink:href="#icon-codepen"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="item">
+      <a class="link" href="#" alt="My Github">
+        <svg class="icon">
+          <use xlink:href="#icon-github"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="item">
+      <a class="link" href="#" alt="My LinkedIn">
+        <svg class="icon">
+          <use xlink:href="#icon-linkedin"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="item">
+      <a class="link" href="#" alt="My RSS">
+        <svg class="icon">
+          <use xlink:href="#icon-rss"></use>
+        </svg>
+      </a>
+    </li>
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-
+  <nav class="navigation">
+    <ul class="list">
+      <li class="item">
+        <a href="/work" class="link">Work</a>
+      </li>
+      <li class="item">
+        <a href="/about" class="link">About</a>
+      </li>
+      <li class="item">
+        <a href="/blog" class="link">Blog</a>
+      </li>
+    </ul>
+  </nav>  
 </div>

@@ -1,0 +1,20 @@
+.social-list
+  display flex
+  margin $space 0 0
+
+  > .item
+    +above($tablet)
+      margin 0 $space 0 0
+
+    +below($tablet)
+      margin 0 $space-sm
+
+    > .link
+      &:hover
+        border-color #000
+
+        .icon
+          fill $primary-color
+
+      > .icon
+        transition fill 0.3s linear

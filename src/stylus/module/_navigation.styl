@@ -1,0 +1,15 @@
+.navigation
+  margin: $space-lg 0 0
+
+  > .list
+    display flex
+
+    > .item
+      +above($tablet)
+        margin 0 $space 0 0
+
+      +below($tablet)
+        margin 0 $space
+
+      > .link
+        font-weight 500

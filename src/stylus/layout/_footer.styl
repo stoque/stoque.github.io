@@ -1,0 +1,26 @@
+.main-footer
+  display flex
+  text-transform lowercase
+
+  +above($tablet)
+    margin 0 0 $space 100px
+
+  +below($tablet)
+    margin 0 0 $space 0
+    text-align center
+  
+  > .text
+    font-size rem(13px)
+    width 100%
+
+    > .icon
+      animation pulse 0.3s infinite alternate
+      height 12px
+      margin 0 0 0 2px
+      width 12px
+
+@keyframes pulse
+  from
+    transform scale(0.9)
+  to
+    transform scale(1.2)
