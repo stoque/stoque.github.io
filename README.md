@@ -1,2 +1,2 @@
-# Lucas Stoque
-Blog pessoal
+# lucastoque.com
+Personal website
