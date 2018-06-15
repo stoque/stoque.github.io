@@ -2,8 +2,39 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
-import Header from '../components/header'
-import './index.css'
+import Avatar from '../components/avatar'
+import styled, { injectGlobal } from 'styled-components'
+
+injectGlobal`
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html,
+  body {
+    height: 100%
+  }
+
+  body {
+    font-family: 'Roboto Mono', monospace;
+  }
+`
+
+const Wrapper = styled.div`
+  height: 94vh;
+
+  @media (max-width: 992px) {
+    padding: 20px;
+  }
+
+  @media (min-width: 992px) {
+    padding: 100px;
+  }
+`
 
 const Layout = ({ children, data }) => (
   <div>
@@ -11,18 +42,17 @@ const Layout = ({ children, data }) => (
       title={data.site.siteMetadata.title}
       meta={[
         { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' }
+        { name: 'keywords', content: 'sample, something' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+      ]}
+      link={[
+        { href: 'https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700', rel: 'stylesheet' }
       ]}
     />
-    <Header siteTitle={data.site.siteMetadata.title} />
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0
-      }}
-    >
+    <Wrapper>
+      <Avatar/>
+    </Wrapper>
+    <div>
       {children()}
     </div>
   </div>
