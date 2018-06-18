@@ -1,2 +1,0 @@
-# Lucas Stoque
-Blog pessoal
