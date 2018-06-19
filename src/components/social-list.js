@@ -29,6 +29,11 @@ const SocialList = () => (
         <Icon name="medium"/>
       </Link>
     </Item>
+    <Item>
+      <Link href="https://t.me/lucstoque" alt="My Telegram" target="_blank">
+        <Icon name="telegram"/>
+      </Link>
+    </Item>
   </List>
 )
 
