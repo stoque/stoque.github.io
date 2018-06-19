@@ -1,9 +1,14 @@
 import React from 'react'
-// import Link from 'gatsby-link'
+
+import Avatar from '../components/avatar'
+import SocialList from '../components/social-list'
+import Navigation from '../components/navigation'
 
 const IndexPage = () => (
   <div>
-    {/* <Link to="/page-2/">Go to page 2</Link> */}
+    <Avatar/>
+    <SocialList/>
+    <Navigation/>
   </div>
 )
 
