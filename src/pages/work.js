@@ -1,5 +1,5 @@
 import React from 'react'
-import BackButton from '../components/back-button';
+import BackButton from '../components/back-button'
 
 const WorkPage = () => (
   <div>
