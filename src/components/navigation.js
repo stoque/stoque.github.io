@@ -36,7 +36,7 @@ const StyledLink = styled(Link)`
   text-decoration: none;
 
   &:hover {
-    color: #6c5ce7;
+    color: ${props => props.theme.mainColor};
   }
 `
 

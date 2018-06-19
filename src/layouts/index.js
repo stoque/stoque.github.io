@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import styled, { injectGlobal } from 'styled-components'
+import styled, { injectGlobal, ThemeProvider } from 'styled-components'
 import Svgs from '../components/svgs'
 
 const Layout = ({ children, data }) => (
@@ -19,7 +19,9 @@ const Layout = ({ children, data }) => (
     />
     <Svgs/>
     <Wrapper>
-      {children()}
+      <ThemeProvider theme={theme}>
+        {children()}
+      </ThemeProvider>
     </Wrapper>
   </div>
 )
@@ -46,6 +48,7 @@ injectGlobal`
     list-style: none;
   }
 `
+
 const Wrapper = styled.div`
   height: 94vh;
 
@@ -57,6 +60,10 @@ const Wrapper = styled.div`
     padding: 200px 100px;
   }
 `
+
+const theme = {
+  mainColor: '#6c5ce7'
+}
 
 Layout.propTypes = {
   children: PropTypes.func

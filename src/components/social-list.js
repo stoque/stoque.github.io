@@ -1,5 +1,5 @@
 import React from 'react'
-import Icon from './icons'
+import Icon from './icon'
 import styled from 'styled-components'
 
 const SocialList = () => (
@@ -42,7 +42,7 @@ const Item = styled.li`
 `
 const Link = styled.a`
   &:hover svg {
-    fill: #6c5ce7;
+    fill: ${props => props.theme.mainColor};
   }
 `
 
