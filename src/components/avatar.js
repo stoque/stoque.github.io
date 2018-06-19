@@ -1,9 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
+import avatar from '../../static/images/avatar.png'
 
 const Avatar = () => (
   <Wrapper>
-    <Image src="https://avatars0.githubusercontent.com/u/12236827?s=460&v=4" alt="My Pic"/>
+    <Image src={avatar} alt="My Pic"/>
     <Name>Lucas Stoque</Name>
     <Profession>Front-End Engineer</Profession>
     <Info>
