@@ -24,6 +24,11 @@ const SocialList = () => (
         <Icon name="twitter"/>
       </Link>
     </Item>
+    <Item>
+      <Link href="https://medium.com/@stoque" alt="My Medium" target="_blank">
+        <Icon name="medium"/>
+      </Link>
+    </Item>
   </List>
 )
 
