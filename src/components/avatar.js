@@ -22,7 +22,7 @@ const Wrapper = styled.div`
 `
 
 const Image = styled.img`
-  opacity: 0.8;
+  opacity: 0.9;
   width: 100px;
 `
 
