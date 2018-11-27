@@ -20,7 +20,7 @@ const SocialList = () => (
       </Link>
     </Item>
     <Item>
-      <Link href="https://twitter.com/lucstoque" alt="My Twitter" target="_blank">
+      <Link href="https://twitter.com/lucaslstoque" alt="My Twitter" target="_blank">
         <Icon name="twitter"/>
       </Link>
     </Item>
