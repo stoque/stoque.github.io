@@ -51,8 +51,12 @@ const Item = styled.li`
   }
 `
 const Link = styled.a`
-  &:hover svg {
-    fill: ${props => props.theme.mainColor};
+  > svg {
+    fill: ${p => p.theme.mainColor};
+  }
+
+  &:hover > svg {
+    fill: #000;
   }
 `
 

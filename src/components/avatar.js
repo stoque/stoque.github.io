@@ -8,7 +8,7 @@ const Avatar = () => (
     <Name>Lucas Stoque</Name>
     <Profession>Front-End Engineer</Profession>
     <Info>
-      Currently living in Rio de Janeiro - Brasil and working at <Link href="http://wooza.com.br" target="_blank">Wooza</Link>
+      Currently living in Rio de Janeiro - Brazil and working at <Link href="http://wooza.com.br" target="_blank">@wooza</Link>
     </Info>
   </Wrapper>
 )
@@ -23,7 +23,7 @@ const Wrapper = styled.div`
 
 const Image = styled.img`
   opacity: 0.9;
-  width: 100px;
+  width: 160px;
 `
 
 const Name = styled.h1`

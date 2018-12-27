@@ -42,6 +42,12 @@ injectGlobal`
 
   body {
     font-family: 'Roboto Mono', monospace;
+    border-bottom: 4px solid #9c88ff;
+
+    @media (max-width: 992px) {
+      display: flex;
+      align-items: center;
+    }
   }
 
   ul {
@@ -53,7 +59,7 @@ const Wrapper = styled.div`
   height: 94vh;
 
   @media (max-width: 992px) {
-    padding: 40px;
+    padding: 80px 40px 0 40px;
   }
 
   @media (min-width: 992px) {
