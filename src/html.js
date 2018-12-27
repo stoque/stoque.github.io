@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 
 let stylesStr
 if (process.env.NODE_ENV === `production`) {
@@ -10,7 +10,7 @@ if (process.env.NODE_ENV === `production`) {
 }
 
 module.exports = class HTML extends React.Component {
-  render() {
+  render () {
     let css
     if (process.env.NODE_ENV === `production`) {
       css = (
@@ -29,7 +29,7 @@ module.exports = class HTML extends React.Component {
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
-          <meta name="theme-color" content="#db5945" />
+          <meta name="theme-color" content="#6c5ce7" />
           {this.props.headComponents}
           {css}
         </head>
