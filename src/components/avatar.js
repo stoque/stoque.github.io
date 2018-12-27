@@ -8,7 +8,7 @@ const Avatar = () => (
     <Name>Lucas Stoque</Name>
     <Profession>Front-End Engineer</Profession>
     <Info>
-      Currently living in Rio de Janeiro - Brazil and working at <Link href="http://wooza.com.br" target="_blank">@wooza</Link>
+      Currently living in Rio de Janeiro - Brazil and working at <Link href="https://wooza.com.br" target="_blank">@wooza</Link>
     </Info>
   </Wrapper>
 )
