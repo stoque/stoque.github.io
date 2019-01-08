@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Lucas Stoque`,
+    title: `Lucas Stoque - Software Engineer`,
     author: `Lucas Stoque`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    description: 'A blog of a front-end developer',
+    siteUrl: `https://lucastoque.com/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `ostuqoe`,
     },
   },
   plugins: [
@@ -67,6 +67,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
-    `gatsby-plugin-react-helmet`
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-styled-components`
   ],
 }
