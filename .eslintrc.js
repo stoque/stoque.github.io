@@ -15,5 +15,8 @@ module.exports = {
       "experimentalObjectRestSpread": true,
       "jsx": true,
     },
+  },
+  "rules": {
+    "react/jsx-fragments": true
   }
 }
