@@ -70,6 +70,11 @@ const Content = styled.div`
     font-size: 16px;
     line-height: 1.58;
     margin: 20px 0 0;
+
+    &:first-child:first-letter {
+      font-size: 30px;
+      font-weight: bold;
+    }
   }
 
   > ul,
@@ -86,7 +91,7 @@ const Content = styled.div`
   }
 
   blockquote {
-    margin: 50px 0 0;
+    margin: 50px 0 50px 0;
     padding: 0 0 0 50px;
     font-size: 20px;
   }
