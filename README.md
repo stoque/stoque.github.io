@@ -1,4 +1,4 @@
-# lucastoque.com - Personal Website :)
+# lucastoque.com - Personal Website ;)
 
 This project uses GatsbysJS and Styled Components.
 
