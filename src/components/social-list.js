@@ -39,6 +39,7 @@ const SocialList = () => (
 
 const List = styled.ul`
   display: flex;
+  list-style: none;
   margin: 20px 0 0;
 
   @media (max-width: 992px) {
