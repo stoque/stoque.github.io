@@ -23,7 +23,7 @@ const SEO = ({ description, lang, meta, keywords }) => {
               },
               {
                 property: `og:title`,
-                content: data.site.siteMetadata.titl,
+                content: data.site.siteMetadata.title,
               },
               {
                 property: `og:description`,
@@ -43,7 +43,7 @@ const SEO = ({ description, lang, meta, keywords }) => {
               },
               {
                 name: `twitter:title`,
-                content: data.site.siteMetadata.titl,
+                content: data.site.siteMetadata.title,
               },
               {
                 name: `twitter:description`,
