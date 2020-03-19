@@ -10,9 +10,9 @@ const Avatar = ({ isIndex }) => (
     <StyledLink to="/">
       <Image src={avatar} alt="My Pic" isSmall={!isIndex} />
       {isIndex &&
-        <>
+        <>  
           <Name>Lucas Stoque</Name>
-          <Profession>Front-End Engineer</Profession>
+          <Profession>Software Engineer</Profession>
         </>
       }
     </StyledLink>
@@ -20,7 +20,9 @@ const Avatar = ({ isIndex }) => (
     {isIndex &&
       <Info>
         Currently living in Rio de Janeiro - Brazil and working at {' '}
-        <a href="https://wooza.com.br" target="_blank">@wooza</a>
+        <a href="https://www.globo.com/" target="_blank">globo.com</a>
+        {' | '}
+        <a href="https://globoplay.globo.com/" target="_blank">globoplay</a>
       </Info>
     }
 
@@ -44,6 +46,7 @@ const StyledLink = styled(Link)`
 
 const Image = styled.img`
   opacity: 0.9;
+  border-radius: 100px;
   width: ${p => p.isSmall ? '80px' : '160px'};
   transition: width 0.4s linear;
 `
