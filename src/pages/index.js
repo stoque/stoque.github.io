@@ -9,10 +9,7 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location}>
-      <SEO
-        title="All posts"
-        keywords={[`blog`, `gatsby`, `javascript`, `react`]}
-      />
+      <SEO keywords={[`blog`, `gatsby`, `javascript`, `react`]} />
     </Layout>
   )
 }
