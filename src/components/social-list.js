@@ -6,32 +6,40 @@ const SocialList = () => (
   <List>
     <Item>
       <Link href="https://github.com/stoque" alt="My GitHub" target="_blank">
-        <Icon name="github"/>
+        <Icon name="github" />
       </Link>
     </Item>
     <Item>
-      <Link href="https://www.linkedin.com/in/lucastoque/" alt="My Linkedin" target="_blank">
-        <Icon name="linkedin"/>
+      <Link
+        href="https://www.linkedin.com/in/lucastoque/"
+        alt="My Linkedin"
+        target="_blank"
+      >
+        <Icon name="linkedin" />
       </Link>
     </Item>
     <Item>
       <Link href="https://codepen.io/stoque/" alt="My Codepen" target="_blank">
-        <Icon name="codepen"/>
+        <Icon name="codepen" />
       </Link>
     </Item>
     <Item>
-      <Link href="https://twitter.com/lucaslstoque" alt="My Twitter" target="_blank">
-        <Icon name="twitter"/>
+      <Link
+        href="https://twitter.com/lucaslstoque"
+        alt="My Twitter"
+        target="_blank"
+      >
+        <Icon name="twitter" />
       </Link>
     </Item>
     <Item>
       <Link href="https://medium.com/@stoque" alt="My Medium" target="_blank">
-        <Icon name="medium"/>
+        <Icon name="medium" />
       </Link>
     </Item>
     <Item>
       <Link href="https://t.me/lucstoque" alt="My Telegram" target="_blank">
-        <Icon name="telegram"/>
+        <Icon name="telegram" />
       </Link>
     </Item>
   </List>
@@ -54,10 +62,11 @@ const Item = styled.li`
 const Link = styled.a`
   > svg {
     fill: ${p => p.theme.mainColor};
+    transition: transform 0.1s linear;
   }
 
   &:hover > svg {
-    fill: #000;
+    transform: translateY(-4px);
   }
 `
 

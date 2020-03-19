@@ -18,6 +18,14 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: 'Roboto Mono', monospace;
-    color: ${theme.textColor}
+    color: ${theme.textColor};
+    background: #201F22;
+  }
+
+  #___gatsby {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
   }
 `

@@ -3,18 +3,16 @@ import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import PostList from '../components/post-list'
 
 const BlogIndex = ({ data, location }) => {
   const posts = data.allMarkdownRemark.edges
-  
+
   return (
     <Layout location={location}>
       <SEO
         title="All posts"
         keywords={[`blog`, `gatsby`, `javascript`, `react`]}
       />
-      <PostList posts={posts} />
     </Layout>
   )
 }
