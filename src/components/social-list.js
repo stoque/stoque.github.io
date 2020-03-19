@@ -48,7 +48,7 @@ const SocialList = () => (
 const List = styled.ul`
   display: flex;
   list-style: none;
-  margin: 20px 0 0;
+  margin: 24px 0 0;
 
   @media (max-width: 992px) {
     justify-content: center;
@@ -56,7 +56,7 @@ const List = styled.ul`
 `
 const Item = styled.li`
   &:not(:last-child) {
-    margin: 0 20px 0 0;
+    margin: 0 24px 0 0;
   }
 `
 const Link = styled.a`

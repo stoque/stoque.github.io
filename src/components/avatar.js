@@ -19,7 +19,9 @@ const Avatar = ({ isIndex }) => (
 
     {isIndex && (
       <Info>
-        Currently living in Rio de Janeiro - Brazil and working at{' '}
+        Living in Rio de Janeiro - Brazil
+        <br />
+        Working at{' '}
         <a href="https://www.globo.com/" target="_blank">
           globo.com
         </a>
@@ -39,7 +41,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: -100px;
-  padding: 0 20px;
+  padding: 0 16px;
 `
 
 const StyledLink = styled(Link)`
@@ -56,9 +58,9 @@ const Image = styled.img`
 `
 
 const Name = styled.h1`
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 700;
-  color: ${props => props.theme.mainColor};
+  margin: 16px 0 0;
 `
 
 const Profession = styled.h2`
@@ -67,9 +69,9 @@ const Profession = styled.h2`
 `
 
 const Info = styled.h3`
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
-  margin: 20px 0 0;
+  margin: 24px 0 0;
   text-align: center;
   line-height: 1.4;
 
